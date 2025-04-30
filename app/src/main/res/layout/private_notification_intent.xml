@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <View style="@style/Private_Icon_NotificationIntent"/>
+
+
+        <TextView
+            android:text="@string/task_secured"
+            style="@style/Topic_NotificationIntent"/>
+
+
+
+        <LinearLayout style="@style/Buttons_LinearLayout_NotificationIntent">
+            <View style="@style/HDivider_NotificationIntent"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="0.5">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/closeBTN"
+                    android:text="@string/close"
+                    style="@style/Buttons_NotificationIntent"/>
+
+                <View style="@style/VDivider_NotificationIntent"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/laterBTN"
+                    android:text="@string/later"
+                    style="@style/Buttons_NotificationIntent"/>
+            </TableRow>
+
+            <View style="@style/HDivider_NotificationIntent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/viewBTN"
+                android:text="@string/view"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                style="@style/Buttons_NotificationIntent"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

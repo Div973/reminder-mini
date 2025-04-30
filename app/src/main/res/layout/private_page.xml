@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:padding="15dp"
+    android:layout_height="match_parent">
+
+
+    <include
+        layout="@layout/default_recycler_adapter"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+    <ImageView
+        android:id="@+id/noTaskFoundImage"
+        style="@style/TaskNotFound_Image.PrivateTask"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

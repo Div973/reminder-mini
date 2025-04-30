@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.MaterialToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:navigationIcon="@drawable/arrow_back"
+    app:navigationIconTint="@color/iconsDefaultColor"
+    tools:menu="@menu/select_task_menu"
+    app:title="1 selected"
+    />

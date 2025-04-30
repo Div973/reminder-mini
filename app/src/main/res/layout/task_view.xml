@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/edit_task_menu"
+        app:navigationIcon="@drawable/arrow_back"
+        app:navigationIconTint="@color/navigationIconColor"
+        app:title="@string/topic"/>
+
+
+
+
+    <ScrollView
+        android:padding="0dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_margin="0dp"
+        style="@style/ScrollView_TaskViewPage">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:id="@+id/setDescription"
+                style="@style/Description_TaskViewPage" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:padding="0dp"
+        style="@style/CardView_Reschedule">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/seeMore"
+            style="@style/SeeMoreButton_Reschedule" />
+
+        <TextView
+            style="@style/BottomSheetHeading_TaskViewPage"/>
+
+        <LinearLayout
+            android:id="@+id/info"
+            style="@style/InfoView_TaskViewPage">
+
+
+            <TextView style="@style/ALabel_TaskViewPage"/>
+
+            <TextView
+                android:id="@+id/setAddedOn"
+                style="@style/LabelInfo_TaskViewPage"/>
+
+            <TextView style="@style/CLabel_TaskViewPage"/>
+
+            <TextView
+                android:id="@+id/setScheduledDate"
+                style="@style/LabelInfo_TaskViewPage"/>
+
+            <TextView style="@style/RepeatLabel_TaskViewPage"/>
+
+            <TextView
+                android:id="@+id/setRepeatStatus"
+                android:text="@string/doNotRepeat"
+                style="@style/LabelInfo_TaskViewPage"/>
+
+            <LinearLayout
+                android:id="@+id/setRepeatDays"
+                style="@style/DaysInWeek_TaskCard"
+                android:layout_margin="0dp">
+                <TextView
+                    style="@style/DaysS_TaskCard"/>
+                <TextView
+                    style="@style/DaysM_TaskCard"/>
+                <TextView
+                    style="@style/DaysT_TaskCard"/>
+                <TextView
+                    style="@style/DaysW_TaskCard"/>
+                <TextView
+                    style="@style/DaysT_TaskCard"/>
+                <TextView
+                    style="@style/DaysF_TaskCard"/>
+                <TextView
+                    style="@style/DaysS_TaskCard"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#AEAEAE</color>
+    <color name="cardColorDark">#232323</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="blue_violet">#B386FC</color>
+    <color name="windowBackground">#2E2E2E</color>
+    <color name="windowBackgroundLight">#F8F4F9</color>
+    <color name="windowBackgroundDark">#2E2E2E</color>
+    <color name="dateTextHighlight">#E9FFFFFF</color>
+    <color name="taskIndicatorRed">#4BD88597</color>
+    <color name="taskIndicatorGreen">#6F85E179</color>
+
+    <color name="access_date_drawable">#F8F4F9</color>
+
+    <color name="iconsDefaultColor">#FFFFFFFF</color>
+
+    <color name="navigationIconColor">#A9A9A9</color>
+
+    <color name="dateNormalText">#B283FF</color>
+    <color name="dateClickHighlight">#22000000</color>
+    <color name="datePassedText">#7AB386FC</color>
+
+    <color name="coloredIconBackground">#2E2E2E</color>
+
+    <color name="colorTest">#6F85E179</color>
+
+    <color name="cardSelected">#27B386FC</color>
+
+</resources>

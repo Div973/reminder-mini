@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar style="@style/Toolbar_LaterTask"/>
+
+
+    <ScrollView style="@style/ScrollView_LaterTask">
+
+        <LinearLayout style="@style/LinearLayout_LaterTask">
+
+
+
+            <RadioGroup
+                android:id="@+id/timeOption"
+                style="@style/RadioGroup_LaterTask">
+
+                <RadioButton
+                    android:id="@+id/min_10"
+                    style="@style/RadioButton_10M_LaterTask"/>
+
+                <RadioButton
+                    android:id="@+id/min_20"
+                    style="@style/RadioButton_20M_LaterTask" />
+
+                <RadioButton
+                    android:id="@+id/min_30"
+                    style="@style/RadioButton_30M_LaterTask"/>
+
+                <RadioButton
+                    android:id="@+id/custom"
+                    style="@style/RadioButton_CUSTOM_LaterTask"/>
+            </RadioGroup>
+
+            <LinearLayout style="@style/LinearLayout_LinearLayout_LaterTask">
+
+                <LinearLayout style="@style/LinearLayout_LinearLayout_LinearLayout_LaterTask">
+
+                    <TextView
+                        android:id="@+id/setDate"
+                        style="@style/DateView_LaterTask"/>
+
+                    <TextView
+                        android:id="@+id/setTime"
+                        style="@style/TimeView_LaterTask"/>
+
+
+                </LinearLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/dateTimePickerView"
+                    style="@style/DateTimePickerView_LaterTask">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/dateTimePicker"
+                        style="@style/DateTimePickerView_ViewPager_LaterTask" />
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/dateTimeTab"
+                        style="@style/DateTimePickerView_TabLayout_LaterTask"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout style="@style/LinearLayout_Buttons_LaterTask">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancel"
+            style="@style/CancelButton_LaterTask" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/confirm"
+            style="@style/ConformButton_LaterTask"/>
+
+
+        </LinearLayout>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

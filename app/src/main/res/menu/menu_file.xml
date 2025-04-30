@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/moreMenu"
+        android:icon="@drawable/three_dots_vertical"
+        app:showAsAction="always"
+        android:title="@string/menuItem">
+        <menu>
+            <item android:id="@+id/menuPrivate"
+                android:title="@string/privates"
+                />
+            <item android:id="@+id/menuSettings"
+                android:title="@string/settings"
+                />
+            <item android:id="@+id/menuAbout"
+                android:title="@string/about"
+                />
+        </menu>
+    </item>
+
+</menu>

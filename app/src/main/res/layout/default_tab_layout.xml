@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.tabs.TabLayout
+    android:id="@+id/default_tab_layout"
+    style="@style/DEFAULT_TAB_LAYOUT"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

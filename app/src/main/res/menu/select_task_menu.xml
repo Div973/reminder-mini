@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/selectAllItem"
+        android:icon="@drawable/check_box_outline_blank"
+        android:title="@string/done"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/unSelectAllItem"
+        android:icon="@drawable/check_box"
+        android:title="@string/done"
+        android:visible="false"
+        android:iconTint="@color/blue_violet"
+        app:showAsAction="ifRoom"/>
+
+    <item android:title="@string/menu"
+        android:icon="@drawable/three_dots_vertical"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menu_lock"
+                android:title="@string/lock" />
+            <item
+                android:id="@+id/menu_pin"
+                android:title="@string/pin" />
+            <item
+                android:visible="false"
+                android:id="@+id/menu_unpin"
+                android:title="@string/unpin" />
+            <item
+                android:id="@+id/menu_mark_done"
+                android:title="@string/markDone" />
+
+            <item
+                android:id="@+id/menu_mark_not_done"
+                android:title="@string/notDone" />
+
+            <item
+                android:id="@+id/menu_delete"
+                android:title="@string/delete" />
+
+        </menu>
+    </item>
+</menu>

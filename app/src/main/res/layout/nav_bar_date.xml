@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:backgroundTint="@color/dateTextHighlight"
+    style="@style/Calendar_CardView_Reschedule">
+
+
+            <TextView
+                style="@style/MonthCardView_NavBarDate"/>
+
+            <TextView
+                style="@style/DateCardView_NavBarDate" />
+
+            <TextView
+                style="@style/DayCardView_NavBarDate"/>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+

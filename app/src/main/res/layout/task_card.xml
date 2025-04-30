@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/CardViewParentLayout_TaskCard">
+
+        <!--    0   -->
+        <TextView
+            style="@style/SetDate_TaskCard" />
+
+
+        <!--    1   -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/CardView_TaskCard">
+
+            <!--    0  of 1   -->
+            <View style="@style/TaskPinned_TaskCard"/>
+
+            <!--    1  of 1   -->
+            <View style="@style/Indicator_TaskCard" />
+
+            <!--    2  of 1   -->
+            <TextView style="@style/Topic_TaskCard" />
+
+            <!--    3  of 1   -->
+            <TextView style="@style/RepeatType_TaskCard" />
+
+            <!--    4  of 1   -->
+            <LinearLayout style="@style/DaysInWeek_TaskCard">
+                <TextView style="@style/DaysS_TaskCard"/>
+                <TextView style="@style/DaysM_TaskCard"/>
+                <TextView style="@style/DaysT_TaskCard"/>
+                <TextView style="@style/DaysW_TaskCard"/>
+                <TextView style="@style/DaysT_TaskCard"/>
+                <TextView style="@style/DaysF_TaskCard"/>
+                <TextView style="@style/DaysS_TaskCard"/>
+            </LinearLayout>
+
+            <!--    5  of 1   -->
+            <View style="@style/Check_Circular_Task_Card"/>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+    </LinearLayout>
+
+
+
+

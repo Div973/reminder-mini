@@ -1,0 +1,254 @@
+<resources>
+    <string name="application_started_for_the_first_time">application_started_for_the_first_time</string>
+    <string name="contentDescription_addTask">_</string>
+    <string name="client_web_id_string">798075059628-l2rsg48dtee9m884csm4pl3fr0ghlf5i.apps.googleusercontent.com</string>
+    <string name="app_name">Reminder-Mini</string>
+    <string name="add_task">Add Task</string>
+    <string name="topic">Topic</string>
+    <string name="description">Description</string>
+    <string name="account">Account</string>
+    <string name="doNotRepeat">No Repeat</string>
+    <string name="delete">Delete</string>
+    <string name="markDone">Done</string>
+    <string name="markNotDone">Not done</string>
+    <string name="share">Share</string>
+    <string name="home">Home</string>
+    <string name="task_inbox">Task Inbox</string>
+    <string name="search">Search</string>
+    <string name="menuItem">MenuItem</string>
+    <string name="repeat">Repeat:</string>
+    <string name="reschedule">Reschedule</string>
+    <string name="noDescriptionAttached">(No description attached..)</string>
+    <string name="saturdaySunday">S</string>
+    <string name="monday">M</string>
+    <string name="tuesdayThursday">T</string>
+    <string name="wednesday">W</string>
+    <string name="friday">F</string>
+    <string name="task_secured">Task Secured</string>
+    <string name="close">Close</string>
+    <string name="later">Later</string>
+    <string name="view">View</string>
+    <string name="_10_min_later">10 min later</string>
+    <string name="_20_min_later">20 min later</string>
+    <string name="_30_min_later">30 min later</string>
+    <string name="custom">Custom</string>
+    <string name="remind_me">Remind me:</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="setText">%1$s</string>
+    <string name="unpin">Unpin</string>
+    <string name="people">People</string>
+    <string name="tasks">Tasks</string>
+    <string name="chats">Chats</string>
+    <string name="boss">Boss</string>
+    <string name="employee">Employee</string>
+    <string name="done">Done</string>
+    <string name="notDone">Not done</string>
+
+
+    <string name="about_page_about_text_1">Reminder is your personal assistant for staying organized and on track. Whether you\'re managing a hectic workload, juggling school assignments, or balancing life and love, Reminder simplifies task management and ensures you never miss a beat.</string>
+
+
+    <string name="about_page_about_text_2">
+        \u2022 <b>Office Professionals:</b> Keep track of your tasks, deadlines, and priorities—whether you\'re assigning tasks as a boss or organizing your workload as an employee. \n
+        \u2022 <b>Students and Teachers:</b>  Streamline homework schedules and manage assignments effectively. \n
+        \u2022 <b>Couples and Families:</b> Plan the perfect date, manage daily chores, and balance personal and professional life with ease. \n
+        \u2022 <b>Freelancers:</b> Keep projects and deadlines organized to impress your clients and grow your business. \n
+        \u2022 <b>Event Planners:</b> Organize events, track milestones, and ensure everything runs smoothly. \n
+        \u2022 <b>Health Enthusiasts:</b> Schedule workouts, meal preps, and medication reminders to stay on top of your health goals. \n
+        \u2022 <b>Hobbyists and Creators:</b> Manage time for your creative projects, hobbies, and passions. \n
+        \u2022 <b>And Many More:</b>  Whatever your lifestyle or profession, Reminder adapts to your needs to help you stay productive and stress-free. \n
+    </string>
+
+
+    <string name="about_page_about_text_3">
+        With Reminder, you can: \n
+        \u2022 Keep track of your tasks, deadlines, and priorities—whether you\'re assigning tasks as a boss or organizing your workload as an employee. \n
+        \u2022 Streamline homework schedules and manage assignments effectively. \n
+        \u2022 Plan the perfect date, manage daily chores, and balance personal and professional life with ease. \n
+        \u2022 Keep projects and deadlines organized to impress your clients and grow your business. \n
+        \u2022 Organize events, track milestones, and ensure everything runs smoothly. \n
+        \u2022 Schedule workouts, meal preps, and medication reminders to stay on top of your health goals. \n
+        \u2022 Manage time for your creative projects, hobbies, and passions. \n
+        \u2022 Whatever your lifestyle or profession, Reminder adapts to your needs to help you stay productive and stress-free. \n
+    </string>
+
+    <string name="about_page_about_text_4">Start simplifying your life today—because managing your time shouldn’t feel like another task!</string>
+
+
+
+    <string-array name="amPm">
+        <item>am</item>
+        <item>pm</item>
+    </string-array>
+
+    <string-array name="repeatType">
+        <item>No Repeat</item>
+        <item>From the given date</item>
+        <item>Up to the given date</item>
+    </string-array>
+
+    <string-array name="daysInWeek">
+        <item>SUN</item>
+        <item>MON</item>
+        <item>TUE</item>
+        <item>WED</item>
+        <item>THU</item>
+        <item>FRI</item>
+        <item>SAT</item>
+    </string-array>
+
+    <string-array name="monthsInYear">
+        <item>JAN</item>
+        <item>FEB</item>
+        <item>MAR</item>
+        <item>APR</item>
+        <item>MAY</item>
+        <item>JUN</item>
+        <item>JUL</item>
+        <item>AUG</item>
+        <item>SEP</item>
+        <item>OCT</item>
+        <item>NOV</item>
+        <item>DEC</item>
+    </string-array>
+
+    <string-array name="monthsInYearFull">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+
+    <string-array name="notifyType">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="notifyTypeTxt">
+        <item>Public tasks</item>
+        <item>Private tasks</item>
+        <item>Normal tasks</item>
+        <item>High priority task</item>
+    </string-array>
+
+
+
+    <!-- TASK EVENT PAGE  -->
+    <string name="set_upcoming_task_format">%1$d %2$s (%3$d:%4$s%5$s)</string>
+
+
+
+    <!-- TASK CARD  -->
+    <string name="set_date_task_view_format">%1$d %2$s %3$d at %4$d:%5$s%6$s</string>
+
+
+    <!-- TASK CARD  -->
+    <string name="set_topic_task_card_format">%1$s</string>
+    <string name="task_card_time_format">%1$d:%2$s %3$s</string>
+    <string name="task_card_repeat_status_format">&lt;i&gt;Repeat:&lt;/i&gt; %1$s</string>
+
+
+    <!-- SEARCH USER CARD  -->
+
+
+    <!-- TASK SETTINGS  -->
+    <string name="notifyForPrivate">ntfPri</string>
+    <string name="pinTaskOnTop">pinTaskOnTop</string>
+    <string name="removeTask">rmvTask</string>
+    <string name="notifyMeFor">ntfMeFor</string>
+    <string name="turn_on_flash_for_task_alert">tOfFtA</string>
+
+
+
+    <!-- TASK INBOX SETTINGS  -->
+    <string name="taskAutoDownload">tad</string>
+    <string name="receiveTask">rcvTsk</string>
+
+    <!-- ACCOUNT SETTINGS  -->
+    <string name="accountPrivate">accPrv</string>
+    <string name="receiveJobRequest">rcvJbRst</string>
+    <string name="receiveEmployeeRequest">rcvEmpRst</string>
+    <string name="blockedAccount">ba</string>
+    <string name="logout">logout</string>
+
+    <!-- LOCK SETTINGS  -->
+    <string name="setPattern">stPtr</string>
+    <string name="setPin">stPin</string>
+    <string name="setPassword">stPsd</string>
+    <string name="get_private_lock_and_message_lock_state">gPlAmLs</string>
+    <string name="get_settings_lock_state">gSLs</string>
+    <string name="get_request_lock_state">gRLs</string>
+    <string name="get_people_lock_state">gPLs</string>
+    <string name="please_enter_the_pattern">Please enter the pattern</string>
+    <string name="re_enter_the_pattern">Please re-enter the pattern for confirmation</string>
+    <string name="pattern_pin_password_error">Please try again</string>
+
+    <string name="re_enter_the_pin">Please re-enter the pin for confirmation</string>
+
+    <string name="please_enter_the_password">Please enter the password</string>
+    <string name="re_enter_the_password">Please re-enter the password for confirmation</string>
+
+    <string name="four_digit_pin">The length of the pin must be greater than 3</string>
+    <string name="submit">Submit</string>
+    <string name="password">Password</string>
+    <string name="pin">Pin</string>
+    <string name="login_signup">Login / Signup</string>
+    <string name="received">Received</string>
+    <string name="sent">Sent</string>
+    <string name="completed">Completed</string>
+    <string name="pending">Pending</string>
+    <string name="save">Save</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="email">Email</string>
+    <string name="profession">Profession</string>
+    <string name="about">About</string>
+    <string name="send_request_to">Send requests to:</string>
+    <string name="request_sent_to">Requests sent to:</string>
+    <string name="accept_request_to">Accept requests to:</string>
+    <string name="request_accepted_to">Requests accepted to:</string>
+    <string name="settings">Settings</string>
+    <string name="privates">Private</string>
+    <string name="task_not_found">Task not found</string>
+    <string name="edit">Edit</string>
+    <string name="requests">Requests</string>
+    <string name="send_works">Send works</string>
+    <string name="receive_works">Receive works</string>
+
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="microsoft">Microsoft</string>
+    <string name="reject">Reject</string>
+    <string name="accept">Accept</string>
+    <string name="send">Send</string>
+    <string name="send_work_request_pending">Send work: ? (Request pending)</string>
+    <string name="receive_task_request_pending">Receive task: ? (Request pending)</string>
+    <string name="unblock_this_person">Unblock this person</string>
+    <string name="help">Help</string>
+    <string name="who_is_reminder_for">Who is Reminder for?</string>
+    <string name="welcome_to_reminder">Welcome to Reminder!</string>
+    <string name="why_choose_reminder">Why Choose Reminder?</string>
+    <string name="div_s_production">Div\'s Production</string>
+
+    <string name="unable_to_pin">Unable to pin</string>
+    <string name="unlock">Unlock</string>
+    <string name="ok">Ok</string>
+    <string name="task_can_only_be_pinned_if_you_have_multiple_task">A task can only be pinned if you have multiple tasks.</string>
+    <string name="lock_it">Lock it</string>
+    <string name="lock">Lock</string>
+    <string name="menu">Menu</string>
+
+
+</resources>

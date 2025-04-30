@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_AddTask">
+
+    <ScrollView style="@style/ScrollView_AddTask">
+
+        <LinearLayout style="@style/ScrollView_LinearLayout_AddTask">
+
+            <TextView
+                style="@style/Topic_TaskViewPage"
+                android:id="@+id/topic_reschedule" />
+
+            <TextView
+                style="@style/Description_TaskViewPage"
+                android:id="@+id/description_reschedule"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+    <include android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/edit_time_bottom_sheet"/>
+
+
+
+
+</LinearLayout>

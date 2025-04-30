@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    style="@style/LinearLayout_AddTask">
+
+    <ScrollView style="@style/ScrollView_AddTask">
+
+        <LinearLayout style="@style/ScrollView_LinearLayout_AddTask">
+
+            <EditText
+                android:id="@+id/setTopic"
+                style="@style/Topic_AddTask"/>
+
+            <EditText
+                style="@style/Description_AddTask"
+                android:id="@+id/setDescription"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+    <include android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/edit_time_bottom_sheet"/>
+
+
+
+
+</LinearLayout>

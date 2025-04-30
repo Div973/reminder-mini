@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:fitsSystemWindows="true"
+        style="@style/CardView_Reschedule">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/expandTimeView"
+            style="@style/SeeMoreButton_Reschedule"/>
+
+
+        <TextView style="@style/SetTime_AddTask"/>
+
+
+
+        <LinearLayout style="@style/BottomSheet_LinearLayout_AddTask">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/selectDateButton"
+                style="@style/ChooseDateButton_AddTask"/>
+
+
+            <LinearLayout
+                style="@style/Time_LinearLayout_AddTask">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/selectTimeButton"
+                    style="@style/ChooseTimeBtn_AddTask"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/HourMinuteInputOuter_AddTask">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/setHour"
+                        style="@style/HourMinuteInputInner_AddTask"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView style="@style/HourColonMinute_AddTask"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/HourMinuteInputOuter_AddTask">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/setMinute"
+                        style="@style/HourMinuteInputInner_AddTask"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout style="@style/AmPm_LinearLayout_AddTask">
+
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/SetAm_AddTask"
+                        android:id="@+id/setAM"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/setPM"
+                        style="@style/SetPm_AddTask"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/repeatStatusView"
+                style="@style/RepeatStatusLinearLayout_AddTask">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:text="@string/repeat"
+                        style="@style/DataTimeTxt_AddTask"/>
+
+                    <Spinner
+                        android:id="@+id/setRepeatType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="10dp"
+                        android:theme="@style/ChooseDateTimeTxt_AddTask" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/daysInWeek"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    style="@style/Time_LinearLayout_AddTask">
+
+                    <com.google.android.material.chip.Chip
+                        android:text="@string/saturdaySunday"
+                        style="@style/DaysOfWeek_Chip_AddTask" />
+                    <com.google.android.material.chip.Chip
+                        android:text="@string/monday"
+                        style="@style/DaysOfWeek_Chip_AddTask"/>
+                    <com.google.android.material.chip.Chip
+                        android:text="@string/tuesdayThursday"
+                        style="@style/DaysOfWeek_Chip_AddTask"/>
+                    <com.google.android.material.chip.Chip
+                        android:text="@string/wednesday"
+                        style="@style/DaysOfWeek_Chip_AddTask"/>
+                    <com.google.android.material.chip.Chip
+                        android:text="@string/tuesdayThursday"
+                        style="@style/DaysOfWeek_Chip_AddTask"/>
+                    <com.google.android.material.chip.Chip
+                        android:text="@string/friday"
+                        style="@style/DaysOfWeek_Chip_AddTask"/>
+                    <com.google.android.material.chip.Chip
+                        android:text="@string/saturdaySunday"
+                        style="@style/DaysOfWeek_Chip_AddTask"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rescheduleAddTask"
+            android:text="@string/reschedule"
+            style="@style/SetTaskBtn_AddTask" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+

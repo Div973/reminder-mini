@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.REQUEST_SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/app_logo_launcher"
+        android:theme="@style/Theme.AppCompat"
+        android:roundIcon="@mipmap/app_logo_launcher_round"
+        android:supportsRtl="true"
+        tools:targetApi="31">
+
+
+
+        <activity
+            android:name=".UserInterfaces.HomePage.MainActivity.MainActivity"
+            android:windowSoftInputMode="adjustNothing"
+            android:theme="@style/Theme.Reminder"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+
+
+        <activity
+            android:name=".UserInterfaces.AddTaskPage.AddTask"
+            android:parentActivityName=".UserInterfaces.HomePage.MainActivity.MainActivity"
+            android:windowSoftInputMode="adjustNothing"
+            android:theme="@style/Theme.AddTask" />
+
+
+
+
+
+
+        <activity
+            android:name=".UserInterfaces.PinnedTaskPage.PinnedTask"
+            android:theme="@style/Theme.Pinned"
+            android:parentActivityName=".UserInterfaces.HomePage.MainActivity.MainActivity"
+            android:windowSoftInputMode="adjustNothing"/>
+
+
+        <activity
+            android:name=".UserInterfaces.TaskViewPage.TaskViewMain"
+            android:theme="@style/Theme.AddTask"
+            android:parentActivityName=".UserInterfaces.HomePage.MainActivity.MainActivity"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true"
+            android:windowSoftInputMode="adjustNothing"/>
+
+
+        <activity
+            android:name=".UserInterfaces.NotificationPage.TaskAlarm.LaterTask.LaterTask"
+            android:theme="@style/Theme.LaterTask"
+            android:label="@string/remind_me"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true"
+            />
+
+
+        <activity
+            android:name=".UserInterfaces.NotificationPage.TaskAlarm.NotificationTypes.NotificationIntent"
+            android:theme="@style/Theme.NotificationIntent"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true"
+            android:showOnLockScreen="true" />
+
+
+
+
+
+
+
+
+        <activity
+            android:name=".UserInterfaces.NotificationPage.TaskAlarm.NotificationTypes.PrivateNotificationIntent"
+            android:theme="@style/Theme.NotificationIntent"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true"
+            android:showOnLockScreen="true" />
+
+
+        <activity
+            android:name=".UserInterfaces.NotificationPage.TaskAlarm.NotificationTypes.HighPriorityNotificationIntent"
+            android:theme="@style/Theme.NotificationIntent"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true"
+            android:showOnLockScreen="true" />
+
+
+
+
+
+
+        <activity
+            android:name=".UserInterfaces.AboutPage.AboutPage"
+            android:windowSoftInputMode="adjustNothing"
+            android:label="@null"
+            android:parentActivityName=".UserInterfaces.HomePage.MainActivity.MainActivity"
+            android:theme="@style/Theme.Reminder" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <receiver
+            android:name=".UserInterfaces.NotificationPage.TaskAlarm.BroadCasts.TaskAlertBroadcast"
+            android:exported="false" />
+
+
+        <receiver
+            android:name=".UserInterfaces.NotificationPage.TaskAlarm.BroadCasts.TaskAlertCancelBroadcast"
+            android:exported="false" />
+
+
+        <receiver
+            android:name=".BackgroundWorks.TaskWork.RescheduleTaskAfterAlarmTrigger"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+                <action android:name="android.intent.action.BATTERY_LOW" />
+                <action android:name="android.intent.action.BATTERY_OKAY" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".BackgroundWorks.TaskWork.SystemRescheduleTaskAfterAlarmTrigger"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.reminder.mini.APP_STARTED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.REBOOT" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+
+
+        <service
+            android:exported="false"
+            android:name=".BackgroundWorks.CheckNotificationService">
+        </service>
+
+
+
+    </application>
+
+</manifest>

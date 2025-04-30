@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/noPasswordText"
+    android:fitsSystemWindows="true"
+    style="@style/NO_PASSWORD_LINEAR_LAYOUT_PPP"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView style="@style/NoPasswordTextView_PPP" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Proceed_NoPasswordLayout_PPP"
+        android:id="@+id/proceed" />
+
+</LinearLayout>

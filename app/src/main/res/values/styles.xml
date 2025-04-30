@@ -1,0 +1,1330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TITLE_TEXT_STYLE" parent="">
+        <item name="titleTextColor">@color/windowBackgroundDark</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <style name="Widget.App.ActionMode" parent="Widget.AppCompat.ActionMode">
+        <item name="titleTextStyle">@style/TITLE_TEXT_STYLE</item>
+        <item name="background">@color/windowBackground</item>
+    </style>
+
+    <style name="RoundShape" parent="">
+        <item name="cornerRadius">50dp</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="DEFAULT_BUTTON" parent="">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ROUND_OUTLINED_ICON_BUTTON" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#858585</item>
+        <item name="iconTint">#A5A5A5</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">#A5A5A5</item>
+        <item name="rippleColor">#B2CCC7C7</item>
+        <item name="shapeAppearanceOverlay">@style/RoundShape</item>
+    </style>
+
+
+    <style name="OUTLINED_BUTTON_ICON_AND_TEXT" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#858585</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">#A5A5A5</item>
+        <item name="rippleColor">#B2CCC7C7</item>
+        <item name="iconGravity">textStart</item>
+    </style>
+
+    <style name="TEXT_BUTTON" parent="@style/Widget.MaterialComponents.Button.TextButton">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconGravity">textStart</item>
+    </style>
+
+    <style name="TEXT_BUTTON_ICON_ONLY" parent="@style/Widget.MaterialComponents.Button.TextButton">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#858585</item>
+        <item name="iconTint">#A5A5A5</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="rippleColor">#B2CCC7C7</item>
+        <item name="shapeAppearanceOverlay">@style/RoundShape</item>
+    </style>
+
+    <style name="INPUT_TEXT_LABEL" parent="">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+
+    <style name="INPUT_TEXT_LAYOUT" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+
+
+    <style name="INPUT_TEXT" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:lines">1</item>
+    </style>
+
+
+    <style name="DEFAULT_TAB_LAYOUT" parent="">
+        <item name="android:backgroundTint">@color/transparent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="DEFAULT_TAB_VIEW_PAGER_LAYOUT" parent="">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">50dp</item>
+    </style>
+
+
+    <!--        A C T I V I T Y      M A I N    P A G E      S T Y L E           -->
+
+    <!--
+    <style name="ToolBar_ActivityMain" parent="Widget.AppCompat.Toolbar">
+        <item name="actionBarStyle">@style/Widget.Design.AppBarLayout</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.ActionBar</item>
+        <item name="android:popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:title">@string/app_name</item>
+        <item name="android:titleTextColor">@color/white</item>
+    </style>
+
+    <style name="SelectedTextView_ActivityMain" parent="TextAppearance.AppCompat.Title">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:text">@string/selectedItemsTitle</item>
+        <item name="android:textColor">#F4F4F4</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginEnd">10dp</item>
+    </style>
+
+    <style name="SearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:visibility">gone</item>
+        <item name="android:paddingStart">-16dp</item>
+        <item name="android:queryHint">Enter email</item>
+        <item name="iconifiedByDefault">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="CloseSearchBar" parent="">
+        <item name="android:visibility">gone</item>
+        <item name="icon">@drawable/close_cross</item>
+        <item name="android:layout_width">?attr/actionBarSize</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="AddUser_ActivityMain" parent="Widget.AppCompat.Button">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">?attr/actionBarSize</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="icon">@drawable/add_user</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="MenuItemButton_ActivityMain" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">?attr/actionBarSize</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="icon">@drawable/three_dots_vertical</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="FrameLayout_ActivityMain" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">?attr/actionBarSize</item>
+        <item name="android:layout_marginBottom">50dp</item>
+    </style>
+
+    -->
+
+    <style name="threePageAdapter_activityMain" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="AddTaskButton_ActivityMain" parent="ShapeAppearanceOverlay.Material3.FloatingActionButton">
+        <item name="android:contentDescription">@string/contentDescription_addTask</item>
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:src">@drawable/add</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+
+    <style name="BottomSheet_ActivityMain" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/windowBackgroundLight</item>
+        <item name="android:animateLayoutChanges">true</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+    <style name="DragButton_ActivityMain" parent="">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_marginTop">-10dp</item>
+        <item name="android:background">@drawable/round_horizontal_rule</item>
+    </style>
+
+
+    <style name="ManipulateGridTaskView_ActivityMain" parent="">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:rowCount">2</item>
+        <item name="android:columnCount">3</item>
+        <item name="android:layout_marginTop">40dp</item>
+    </style>
+
+    <style name="DeleteTask_ActivityMain" parent="TEXT_BUTTON">
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:text">@string/delete</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#919191</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="icon">@drawable/delete</item>
+        <item name="iconTint">#919191</item>
+        <item name="iconSize">30dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="iconPadding">5dp</item>
+        <item name="iconGravity">textTop</item>
+        <item name="rippleColor">#57919191</item>
+    </style>
+
+    <style name="MarkDoneTask_ActivityMain" parent="DeleteTask_ActivityMain">
+        <item name="android:text">@string/markDone</item>
+        <item name="icon">@drawable/done</item>
+    </style>
+
+    <style name="ShareTask_ActivityMain" parent="DeleteTask_ActivityMain">
+        <item name="android:text">@string/share</item>
+        <item name="icon">@drawable/share</item>
+    </style>
+
+    <style name="RescheduleTask_ActivityMain" parent="DeleteTask_ActivityMain">
+        <item name="android:text">Edit</item>
+        <item name="icon">@drawable/edit_calendar</item>
+    </style>
+
+    <style name="PinTask_ActivityMain" parent="DeleteTask_ActivityMain">
+        <item name="android:text">Pin it</item>
+        <item name="icon">@drawable/pin</item>
+    </style>
+
+    <style name="LockTask_ActivityMain" parent="DeleteTask_ActivityMain">
+        <item name="android:text">Lock it</item>
+        <item name="icon">@drawable/lock</item>
+    </style>
+
+    <style name="PriorityTask_ActivityMain" parent="DeleteTask_ActivityMain">
+        <item name="android:text">High priority </item>
+        <item name="icon">@drawable/priority_high</item>
+    </style>
+
+
+    <!--            T A S K      E V E N T    P A G E      S T Y L E            -->
+
+    <style name="AppBar_TaskEventPage" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/windowBackgroundLight</item>
+    </style>
+
+    <style name="Collapsing_AppBar_TaskEventPage" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:elevation">0dp</item>
+        <item name="layout_scrollFlags">scroll|exitUntilCollapsed</item>
+        <item name="layout_scrollEffect">compress</item>
+    </style>
+
+    <style name="LinearLayoutAppBar_ActivityMain" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="TextViewALinearLayoutAppBar_ActivityMain" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:text">Upcoming:</item>
+    </style>
+
+    <style name="TableRowLinearLayoutAppBar_ActivityMain" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+
+    <style name="UpcomingTaskAppbar_ActivityMain" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:text">15 September (6:30pm)</item>
+    </style>
+
+    <style name="UpcomingTaskBtnAppbar_ActivityMain" parent="TEXT_BUTTON_ICON_ONLY">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="iconTint">#807E81</item>
+        <item name="icon">@drawable/arrow_forward_ios</item>
+    </style>
+
+    <style name="RecyclerViewAppBar_ActivityMain" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="layoutManager">androidx.recyclerview.widget.LinearLayoutManager</item>
+    </style>
+
+    <style name="TaskLinearLayout_TaskEventPage" parent="">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="layout_behavior">@string/appbar_scrolling_view_behavior</item>
+    </style>
+
+    <style name="SeePinnedButton_TaskEventPage" parent="TEXT_BUTTON">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_weight">0.3</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:text">Pinned</item>
+        <item name="android:textColor">#8E8E8E</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="rippleColor">#4A8E8E8E</item>
+    </style>
+
+    <style name="VerticalDivider_TaskEventPage" parent="">
+        <item name="android:layout_height">38dp</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">#DFDFDF</item>
+    </style>
+
+    <style name="ClearFilter_TaskEventPage" parent="TEXT_BUTTON">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_weight">0.7</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:text">Clear filter</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="TaskRecyclerView_TaskEventPage" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">115dp</item>
+    </style>
+
+
+    <!--                    T A S K      C A R D      S T Y L E                 -->
+
+    <style name="CardViewParentLayout_TaskCard" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:gravity">end</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="CardViewParentLayout_TAB_TaskCard" parent="CardViewParentLayout_TaskCard">
+        <item name="android:layout_width">600dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="CardView_TaskCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">20dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">0.6</item>
+        <item name="android:layout_height">125dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginTop">12.5dp</item>
+        <item name="elevation">0dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="rippleColor">#16000000</item>
+    </style>
+
+
+
+    <style name="Topic_TaskCard" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/topic</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_margin">15sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Indicator_TaskCard" parent="TaskPinned_TaskCard">
+        <item name="android:layout_height">15dp</item>
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:layout_gravity">end|bottom</item>
+        <item name="android:background">@drawable/done</item>
+        <item name="android:backgroundTint">@color/taskIndicatorGreen</item>
+    </style>
+
+
+    <style name="TaskPinned_TaskCard" parent="">
+        <item name="android:visibility">gone</item>
+        <item name="android:background">@drawable/pin</item>
+        <item name="android:backgroundTint">#B8B8B8</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_gravity">end</item>
+    </style>
+
+    <style name="RepeatType_TaskCard" parent="">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:text">No Repeat</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">64dp</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:layout_marginEnd">15dp</item>
+    </style>
+
+    <style name="DaysInWeek_TaskCard" parent="">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+
+    <style name="SetDate_TaskCard" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">0.3</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:text">9:50</item>
+        <item name="android:layout_marginTop">15.5dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="DaysOfWeek_TaskCard" parent="Widget.MaterialComponents.TextView">
+        <item name="android:enabled">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style  name="DaysS_TaskCard" parent="DaysOfWeek_TaskCard">
+        <item name="android:text">@string/saturdaySunday</item>
+    </style>
+    <style  name="DaysM_TaskCard" parent="DaysOfWeek_TaskCard">
+        <item name="android:text">@string/monday</item>
+    </style>
+    <style  name="DaysT_TaskCard" parent="DaysOfWeek_TaskCard">
+        <item name="android:text">@string/tuesdayThursday</item>
+    </style>
+    <style  name="DaysW_TaskCard" parent="DaysOfWeek_TaskCard">
+        <item name="android:text">@string/wednesday</item>
+    </style>
+    <style  name="DaysF_TaskCard" parent="DaysOfWeek_TaskCard">
+        <item name="android:text">@string/friday</item>
+    </style>
+
+    <style name="Check_Circular_Task_Card" parent="">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_width">24dp</item>
+        <item name="android:background">@drawable/check_circle</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+
+
+
+
+    <!--        R E S C H E D U L E    P A G E      S T Y L E           -->
+
+    <style name="ShapeAppearanceOverlay_CardView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">50dp</item>
+        <item name="cornerSizeTopRight">50dp</item>
+    </style>
+
+    <style name="CardView_Reschedule" parent="Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_CardView</item>
+        <item name="android:animateLayoutChanges">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+
+
+    <style name="SeeMoreButton_Reschedule" parent="TEXT_BUTTON_ICON_ONLY">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:padding">12dp</item>
+        <item name="icon">@drawable/keyboard_arrow_up</item>
+    </style>
+
+
+    <!--            P A G E      S T Y L E           -->
+
+    <style name="Calendar_CardView_Reschedule" parent="">
+        <item name="android:layout_height">85dp</item>
+        <item name="android:layout_width">75dp</item>
+        <item name="android:checkable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="cardCornerRadius">10dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="android:backgroundTint">@color/windowBackgroundLight</item>
+    </style>
+
+
+
+
+    <!--            N A V - B A R - D A T E      S T Y L E          -->
+
+    <style name="MonthCardView_NavBarDate" parent="">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textColor">@color/dateNormalText</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:text">OCT</item>
+    </style>
+
+    <style name="DateCardView_NavBarDate" parent="">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_marginEnd">2dp</item>
+        <item name="android:textColor">@color/dateNormalText</item>
+        <item name="android:text">15</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DayCardView_NavBarDate" parent="">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textColor">@color/dateNormalText</item>
+        <item name="android:text">FRI</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+    <!--            A D D     T A S K     S T Y L E          -->
+
+    <style name="LinearLayout_AddTask" parent="">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <style name="ScrollView_AddTask" parent="">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="ScrollView_LinearLayout_AddTask" parent="">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <style name="Topic_AddTask" parent="Topic_TaskViewPage">
+        <item name="android:background">@color/windowBackgroundLight</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+
+    <style name="Description_AddTask" parent="Description_TaskViewPage">
+        <item name="android:background">@color/windowBackgroundLight</item>
+        <item name="android:hint">@string/description</item>
+        <item name="android:inputType">textMultiLine</item>
+    </style>
+
+
+    <style name="SetTime_AddTask" parent="BottomSheetHeading_TaskViewPage">
+        <item name="android:text">Set timing:</item>
+    </style>
+
+
+
+    <style name="BottomSheet_LinearLayout_AddTask" parent="">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">100dp</item>
+        <item name="android:layout_marginBottom">50dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:animateLayoutChanges">true</item>
+    </style>
+
+    <style name="ChooseDateButton_AddTask" parent="OUTLINED_BUTTON_ICON_AND_TEXT">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:text">01-02-2024</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="iconPadding">10dp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="icon">@drawable/calendar_month</item>
+        <item name="strokeColor">#40838383</item>
+        <item name="iconTint">#858585</item>
+        <item name="rippleColor">#2F1E1E1E</item>
+        <item name="android:fontFamily">@font/time_font</item>
+    </style>
+
+    <style name="DataTimeTxt_AddTask" parent="">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:text">@string/repeat</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+
+    <style name="ChooseDateTimeTxt_AddTask" parent="">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:text">@string/doNotRepeat</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <style name="Time_LinearLayout_AddTask" parent="">
+        <item name="android:layout_height">112dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingStart">3dp</item>
+        <item name="android:paddingEnd">3dp</item>
+    </style>
+
+    <style name="ChooseTimeBtn_AddTask" parent="ROUND_OUTLINED_ICON_BUTTON">
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_weight">0.15</item>
+        <item name="icon">@drawable/more_time</item>
+        <item name="strokeColor">#405E5E5E</item>
+        <item name="iconTint">#858585</item>
+        <item name="rippleColor">#2F1E1E1E</item>
+        <item name="cornerRadius">20dp</item>
+    </style>
+
+    <style name="HourMinuteInputOuter_AddTask" parent="INPUT_TEXT_LAYOUT">
+        <item name="android:layout_height">110dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">0.15</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="boxCornerRadiusBottomEnd">20dp</item>
+        <item name="boxCornerRadiusBottomStart">20dp</item>
+        <item name="boxCornerRadiusTopEnd">20dp</item>
+        <item name="boxCornerRadiusTopStart">20dp</item>
+    </style>
+
+    <style name="HourMinuteInputInner_AddTask" parent="INPUT_TEXT">
+        <item name="android:textSize">30sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">number</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+
+
+    <style name="HourColonMinute_AddTask" parent="">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:text">:</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+
+    <style name="AmPm_LinearLayout_AddTask" parent="">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">0.15</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+
+
+    <style name="AM_SHAPE" parent="">
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeTopRight">20dp</item>
+    </style>
+
+    <style name="PM_SHAPE" parent="">
+        <item name="cornerSizeBottomLeft">20dp</item>
+        <item name="cornerSizeBottomRight">20dp</item>
+    </style>
+
+
+    <style name="SetAm_AddTask" parent="OUTLINED_BUTTON_ICON_AND_TEXT">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="shapeAppearance">@style/AM_SHAPE</item>
+        <item name="android:fontFamily">@font/time_font</item>
+        <item name="android:text">AM</item>
+        <item name="strokeColor">#405E5E5E</item>
+    </style>
+
+
+    <style name="SetPm_AddTask" parent="SetAm_AddTask">
+        <item name="shapeAppearance">@style/PM_SHAPE</item>
+        <item name="android:text">PM</item>
+    </style>
+
+
+
+    <style name="RepeatStatusLinearLayout_AddTask" parent="">
+        <item name="android:visibility">gone</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:animateLayoutChanges">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+
+
+    <style name="DaysOfWeek_Chip_AddTask" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:checkable">true</item>
+        <item name="shapeAppearanceOverlay">@style/RoundShape</item>
+        <item name="chipCornerRadius">50dp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="SetTaskBtn_AddTask" parent="DEFAULT_BUTTON">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:text">@string/add_task</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+
+
+
+    <!--        N O T I F I C A T I O N     I N T E N T     S T Y L E         -->
+
+    <style name="Icon_NotificationIntent" parent="">
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">110dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:backgroundTint">#75000000</item>
+    </style>
+
+
+    <style name="Private_Icon_NotificationIntent" parent="Icon_NotificationIntent">
+        <item name="android:background">@drawable/lock</item>
+    </style>
+
+    <style name="High_Priority_Icon_NotificationIntent" parent="Icon_NotificationIntent">
+        <item name="android:background">@drawable/priority_high</item>
+    </style>
+
+
+    <style name="Topic_NotificationIntent" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:text">@string/topic</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="Buttons_LinearLayout_NotificationIntent" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">0.5</item>
+    </style>
+
+    <style name="Buttons_NotificationIntent" parent="TEXT_BUTTON">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">0.45</item>
+    </style>
+
+    <style name="HDivider_NotificationIntent" parent="">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">#A5A5A5</item>
+        <item name="android:layout_marginTop">1dp</item>
+    </style>
+
+    <style name="VDivider_NotificationIntent" parent="HDivider_NotificationIntent">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:background">#A5A5A5</item>
+        <item name="android:layout_marginTop">1dp</item>
+    </style>
+
+
+
+
+
+    <!-- P P P    L A Y O U T -->
+    <style name="LinearLayout_PPP" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="PatternButton_PPP" parent="ROUND_OUTLINED_ICON_BUTTON">
+        <item name="android:layout_width">65dp</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:layout_margin">50dp</item>
+        <item name="icon">@drawable/pattern</item>
+    </style>
+
+    <style name="PasswordButton_PPP" parent="PatternButton_PPP">
+        <item name="android:visibility">gone</item>
+        <item name="icon">@drawable/password</item>
+    </style>
+
+    <style name="PinButton_PPP" parent="PatternButton_PPP">
+        <item name="icon">@drawable/confirm_key</item>
+    </style>
+
+    <style name="NO_PASSWORD_LINEAR_LAYOUT_PPP" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="NoPasswordTextView_PPP" parent="">
+        <item name="android:text">No password attached. Please setup your security first</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Proceed_NoPasswordLayout_PPP" parent="DEFAULT_BUTTON">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">Proceed</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="icon">@drawable/arrow_forward</item>
+        <item name="iconPadding">5dp</item>
+        <item name="iconGravity">end</item>
+    </style>
+
+    <!-- P A T T E R N   L A Y O U T -->
+
+    <style name="TextPattern" parent="">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/please_enter_the_pattern</item>
+        <item name="android:maxLines">3</item>
+    </style>
+
+    <style name="TextErrorPattern" parent="TextPattern">
+        <item name="android:visibility">gone</item>
+        <item name="android:text">@string/pattern_pin_password_error</item>
+        <item name="android:textColor">#FF8B8B</item>
+    </style>
+
+    <style name="TextRePattern" parent="TextPattern">
+        <item name="android:visibility">gone</item>
+        <item name="android:text">@string/pattern_pin_password_error</item>
+    </style>
+
+    <style name="DOT_PATTERN" parent="">
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="plv_errorDotColor">@color/taskIndicatorRed</item>
+        <item name="plv_errorLineColor">@color/taskIndicatorRed</item>
+        <item name="plv_regularDotColor">#34B386FC</item>
+        <item name="plv_selectedDotColor">@color/blue_violet</item>
+        <item name="plv_regularLineColor">#C8A6FF</item>
+    </style>
+
+
+    <style name="PatternReset" parent="TEXT_BUTTON_ICON_ONLY">
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="icon">@drawable/baseline_refresh_24</item>
+        <item name="rippleColor">#68AEAEAE</item>
+    </style>
+
+
+    <!--   P A S S W O R D    L A Y O U T  -->
+    <style name="TextPasswordLayout" parent="TextPattern">
+        <item name="android:text">@string/please_enter_the_password</item>
+    </style>
+
+    <style name="InputTextOuterPasswordLayout" parent="@style/INPUT_TEXT">
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:minWidth">200dp</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="InputTextPasswordLayout" parent="@style/INPUT_TEXT">
+        <item name="android:hint">@string/password</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#5C5C5C</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+
+
+    <!--   P I N    L A Y O U T  -->
+
+
+    <style name="InputTextPinLayout" parent="@style/InputTextPasswordLayout">
+        <item name="android:hint">@string/pin</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+
+
+    <!-- L A T E R   T A S K   L A Y O U T -->
+
+
+    1<style name="Toolbar_LaterTask" parent="">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="titleTextColor">#606060</item>
+        <item name="title">@string/remind_me</item>
+    </style>
+
+
+    1<style name="ScrollView_LaterTask" parent="">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">85dp</item>
+        <item name="android:layout_marginBottom">85dp</item>
+    </style>
+
+    1<style name="LinearLayout_LaterTask" parent="">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+    </style>
+
+
+    1<style name="RadioGroup_LaterTask" parent="">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+    </style>
+
+
+
+    <style name="RadioButton_LaterTask" parent="">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#373737</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="RadioButton_10M_LaterTask" parent="RadioButton_LaterTask">
+        <item name="android:text">@string/_10_min_later</item>
+        <item name="android:checked">true</item>
+    </style>
+
+    <style name="RadioButton_20M_LaterTask" parent="RadioButton_LaterTask">
+        <item name="android:text">@string/_20_min_later</item>
+    </style>
+
+    <style name="RadioButton_30M_LaterTask" parent="RadioButton_LaterTask">
+        <item name="android:text">@string/_30_min_later</item>
+    </style>
+
+    <style name="RadioButton_CUSTOM_LaterTask" parent="RadioButton_LaterTask">
+        <item name="android:text">@string/custom</item>
+    </style>
+
+
+
+
+    1<style name="LinearLayout_LinearLayout_LaterTask" parent="">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+
+    1<style name="LinearLayout_LinearLayout_LinearLayout_LaterTask" parent="">
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+
+    1<style name="DateView_LaterTask" parent="">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">40dp</item>
+        <item name="android:text">20/04/2024</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#494949</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+
+
+    1<style name="TimeView_LaterTask" parent="DateView_LaterTask">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:text">06:30pm</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+
+    <style name="DateTimePickerView_LaterTask" parent="">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:backgroundTint">@color/windowBackgroundLight</item>
+        <item name="cardElevation">0dp</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="strokeColor">#22000000</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardCornerRadius">10dp</item>
+    </style>
+
+
+    <style name="DateTimePickerView_ViewPager_LaterTask" parent="">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">50dp</item>
+    </style>
+
+
+
+    <style name="DateTimePickerView_TabLayout_LaterTask" parent="">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:backgroundTint">@color/windowBackgroundLight</item>
+        <item name="tabGravity">fill</item>
+    </style>
+
+
+    <style name="LinearLayout_Buttons_LaterTask" parent="">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_margin">17dp</item>
+    </style>
+
+
+    <style name="CancelButton_LaterTask" parent="OUTLINED_BUTTON_ICON_AND_TEXT">
+        <item name="android:layout_weight">0.4</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="icon">@drawable/close_cross</item>
+        <item name="iconPadding">5dp</item>
+        <item name="iconTint">#4BFF2555</item>
+        <item name="strokeColor">#2D000000</item>
+        <item name="android:text">@string/cancel</item>
+        <item name="rippleColor">#19FF2555</item>
+    </style>
+
+    <style name="ConformButton_LaterTask" parent="OUTLINED_BUTTON_ICON_AND_TEXT">
+        <item name="android:layout_weight">0.4</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="icon">@drawable/done</item>
+        <item name="iconPadding">5dp</item>
+        <item name="iconTint">#44FD56</item>
+        <item name="strokeColor">#2D000000</item>
+        <item name="android:text">@string/confirm</item>
+        <item name="rippleColor">#3444FD56</item>
+    </style>
+
+
+    <!--  A C C O U N T  P A G E  S T Y L E -->
+
+
+    <!--  A C C O U N T  S E T T I N G     A C T I V I T Y   S T Y L E -->
+
+
+    <!--  P R I V A T E   P A G E   S T Y L E -->
+
+
+    <!--        T A S K   V I E W   P A G E   S T Y L E           -->
+    <style name="ScrollView_TaskViewPage" parent="@style/INPUT_TEXT_LAYOUT">
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="Topic_TaskViewPage" parent="">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:hint">@string/topic</item>
+        <item name="android:textColorHint">#75000000</item>
+    </style>
+
+    <style name="Description_TaskViewPage" parent="Topic_TaskViewPage">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:hint">@string/noDescriptionAttached</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColorHint">#61000000</item>
+    </style>
+
+    <style name="BottomSheetHeading_TaskViewPage" parent="">
+        <item name="android:layout_marginTop">70dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#AAAAAA</item>
+        <item name="android:text">Details:</item>
+    </style>
+
+    <style name="InfoView_TaskViewPage" parent="">
+        <item name="android:visibility">gone</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:layout_marginTop">100dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Label_TaskViewPage" parent="INPUT_TEXT_LABEL">
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ALabel_TaskViewPage" parent="Label_TaskViewPage">
+        <item name="android:text">Added on:</item>
+    </style>
+
+    <style name="CLabel_TaskViewPage" parent="Label_TaskViewPage">
+        <item name="android:text">Currently scheduled for:</item>
+    </style>
+
+    <style name="RepeatLabel_TaskViewPage" parent="Label_TaskViewPage">
+        <item name="android:text">Repeat status:</item>
+    </style>
+
+    <style name="LabelInfo_TaskViewPage" parent="INPUT_TEXT_LABEL">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:hint">Data</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+
+
+    <style name="TaskNotFound_Image" parent="">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:contentDescription">@string/task_not_found</item>
+    </style>
+
+
+
+    <style name="TaskNotFound_Image.NormalTask" parent="TaskNotFound_Image">
+        <item name="android:src">@drawable/no_task_found</item>
+    </style>
+
+    <style name="TaskNotFound_Image.PrivateTask" parent="TaskNotFound_Image">
+        <item name="android:src">@drawable/no_private_found</item>
+    </style>
+
+    <style name="TaskNotFound_Image.PinnedTask" parent="TaskNotFound_Image">
+        <item name="android:src">@drawable/no_pinned_found</item>
+    </style>
+
+
+    <!--  SEND WORK BUTTON LINEAR LAYOUT STYLE-->
+
+
+    <!--  RECEIVE WORK BUTTON LINEAR LAYOUT STYLE-->
+
+
+    <!--        U S E R  S E A R C H  C A R D  P A G E   S T Y L E           -->
+
+
+    <!--        L O G I N  R E G I S T E R   S T Y L E           -->
+
+
+    <!--        U S E R  R E Q U E S T  C A R D  P A G E   S T Y L E           -->
+
+
+    <!--        U S E R  A C C O U N T  P A G E   S T Y L E           -->
+
+
+    <!--        U S E R  A C C O U N T  P A G E   S T Y L E           -->
+
+
+    <!--        L O G I N  R E G I S T E R   P A G E   S T Y L E           -->
+
+
+    <!--        U S E R   C A R D   P A G E   S T Y L E           -->
+
+
+    <!--        S H A R E   T A S K   S T Y L E           -->
+
+
+</resources>
