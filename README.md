@@ -35,10 +35,6 @@
 This project is licensed under the MIT License.
 
 
-## 📱 Google Play
-(https://play.google.com/store/apps/details?id=com.reminder.mini)
-📲 Download on Google Play
-
 
 ## 🙋‍♂️ Author
 Made by Divyanshu Jha
