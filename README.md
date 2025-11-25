@@ -1,6 +1,6 @@
-# 📝 Reminder Mini – To-Do App
+  # 📝 Reminder
 
-**Reminder Mini** is a lightweight and simple to-do list app designed to help you organize your tasks efficiently. Whether it's daily reminders or long-term goals, Reminder Mini makes staying productive easy and intuitive.
+**Reminder** is a simple yet powerful task manager designed not just for personal productivity but also for seamless task sharing with others. Whether you're organizing your own schedule or coordinating tasks with friends, family, or teammates, Reminder makes task management effortless, collaborative, and reliable — even offline.
 
 ---
 
@@ -19,22 +19,26 @@
 ## 🛠️ Tech Stack
 
 - **Language:** Java
-- **UI:** XML / Jetpack Compose *(specify if used)*
+- **UI:** XML
 - **Architecture:** MVVM
-- **Local Storage:** Room Database / SharedPreferences
-- **Notifications:** Android AlarmManager / WorkManager
+- **Local Storage:** SQLite
+- **Cloud Storage:** Firebase
+- **Notifications:** Android AlarmManager, Firebase cloud messaging for shared task, reeust updates, etc.
 
 ---
 
  ## 📸 Screenshots
-![Screenshot_20250323_200947](https://github.com/user-attachments/assets/7ba69589-c786-49c7-aafe-f1b73da84903)
+<img width="1198" height="2531" alt="Screenshot_20251124_231434" src="https://github.com/user-attachments/assets/4413213d-a156-49d9-8b61-ef81a8e6053d" />
+
+<img width="1198" height="2531" alt="Screenshot_20251124_231454" src="https://github.com/user-attachments/assets/8f35a52f-fd62-47b0-91e3-fae003f3da11" />
+
+<img width="1198" height="2531" alt="Screenshot_20251124_231031" src="https://github.com/user-attachments/assets/22b24c42-8350-4eb7-97b8-4effd982b49b" />
+
+<img width="1198" height="2531" alt="Screenshot_20250323_201712" src="https://github.com/user-attachments/assets/3853bfdc-7fcf-4967-9cf5-90c15132e980" />
+
+<img width="1198" height="2531" alt="Screenshot_20250323_201737" src="https://github.com/user-attachments/assets/b4b42069-8d09-4d90-92d1-b87806d09560" />
 
 
 
 ## 📄 License
 This project is licensed under the MIT License.
-
-
-
-## 🙋‍♂️ Author
-Made by Divyanshu Jha
